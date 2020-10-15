@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Organo';
+    src: url('fonts/organo-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('fonts/Organo.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    border: 10px solid #0099ff;
+    border-radius: 0px 20px;
+    font-size: 16px;
+    background-color: #ffdd00;
+    font-family: "Organo";
+}
+
+h1 {
+    color: #0099ff;
+    margin: 20px 0px 20px 30px;
+    font-size: 400%;
+}
+
+#header-nav {
+    background-color: #0099ff;
+    border: 5px;
+    margin: 20px 30px 20px 30px;
+    border-radius: 20px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+#logo-img {
+    background: url("icons/icon.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 15px 5px 0px;
+    image-resolution: 150px 150px;
+    object-fit: ;
+}
+
+a > h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffdd00;
+    font-size: 50px;
+    margin-top: 20px;
+}
