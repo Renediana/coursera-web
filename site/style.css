@@ -6,9 +6,11 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 body {
     height: 100%;
+    width: 100%;
     border: 10px solid #0099ff;
     border-radius: 0px 20px;
     font-size: 16px;
@@ -19,7 +21,9 @@ body {
 h1 {
     color: #0099ff;
     margin: 20px 0px 20px 30px;
-    font-size: 400%;
+    font-size: 12vw;
+    overflow: hidden;
+    text-shadow: 3px 5px 4px black;
 }
 
 #header-nav {
@@ -31,15 +35,18 @@ h1 {
 
 .container {
     margin-left: 20px;
+    overflow: hidden;
 }
 
 #logo-img {
     background: url("icons/icon.png") no-repeat;
     width: 100px;
     height: 100px;
-    margin: 5px 15px 5px 0px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 20px;
     image-resolution: 150px 150px;
-    object-fit: ;
+    text-shadow: 3px 5px 7px black;
 }
 
 a > h2 {
@@ -47,4 +54,10 @@ a > h2 {
     color: #ffdd00;
     font-size: 50px;
     margin-top: 20px;
+    text-shadow: 3px 5px 7px black;
+}
+
+.navbar-brand > a:hover{
+    text-decoration: none;
+    color: black;
 }
