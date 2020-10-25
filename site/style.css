@@ -7,11 +7,12 @@
 html {
     height: 100%;
     width: 100%;
+    border: 6px solid black;
+    border-radius: 0px 20px;
 }
 body {
-    height: 100vh;
-    border: 10px solid #0099ff;
-    border-radius: 0px 20px;
+    height: 100%;
+    width: 100%;
     font-size: 16px;
     background-color: #ffdd00;
     font-family: "Organo";
@@ -53,15 +54,6 @@ h1 {
     margin-right: 20px;
     vertical-align: middle;
     text-shadow: 3px 5px 7px black;
-}
-
-#merkel-img {
-    background: url("merkel.png") no-repeat center center;
-    width: 517px;
-    height: 355px;
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: auto;
 }
 
 div > a > h2 {
@@ -120,8 +112,46 @@ li > a > span {
        margin-top: 0;
    }
 }
-@media screen and (max-width: 300px) {
-   ul > button {
-       margin-left: 10vw;
-   }
+
+.container {
+    position: relative;
 }
+
+.container img {
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.container .btn-outline-dark {
+    background-color: #0099ff;
+    left: 50px;
+    top: 500px;
+    color: #ffdd00;
+    vertical-align: middle;
+}
+
+.container .btn-outline-dark:hover {
+    background-color: white;
+    left: 50px;
+    top: 500px;
+    color: #0099ff;
+    size: 120%;
+}
+
+@media screen and (max-width: 991px) {
+    .container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        height: auto;
+    }
+    .container .btn-outline-dark {
+        background-color: #0099ff;
+        left: 50px;
+        top: 500px;
+        width: 50vw;
+
+    }
+ }
